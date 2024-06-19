@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width",initial-scale=1.0>
+		<title>Cadence of Hyrule</title>
+		<link rel="icon" href="../photos/logo9000.png" type="image/png">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+		<style type="text/css" media="screen">
+			u{
+				color: #8f8f8f;
+			}
+			.rating{
+				display: inline-block;
+				z-index: 100;
+				width:600px;
+			}
+			.heading {
+			font-size: 25px;
+			margin-right: 25px;
+			}
+			.fa {
+			font-size: 25px;
+			}
+			.checked {
+			color: orange;
+			}
+			.bar-5 {width: 82%; height: 18px; background-color: #4CAF50;padding-left:5px;color: black;}
+			.bar-4 {width: 12%; height: 18px; background-color: #2196F3;padding-left:5px;color: black;}
+			.bar-3 {width: 8%; height: 18px; background-color: #00bcd4;padding-left:5px;color: black;}
+			.bar-2 {width: 4%; height: 18px; background-color: #ff9800;padding-left:5px;color: black;}
+			.bar-1 {width: 8%; height: 18px; background-color: #f44336;padding-left:5px;color: black;}
+			.middle {
+			margin-top:10px;
+			float: left;
+			width: 550px;
+			}
+			.bar-container {
+			width: 100%;
+			background-color:grey;
+			text-align: center;
+			color: white;
+			border-radius: 0 10px 10px ;
+			text-align: left;
+			margin-bottom: -5px;
+			}
+			.row{
+				margin-left: 20px;
+			}
+			@media (max-width: 630px) {
+				.row{
+				margin-left: 0;
+				}
+				.middle{
+					width: 100%;
+				}
+			}
+		
+		</style>
+		<link rel="stylesheet" href="../CSS/game_section.css">
+		<style>
+			#info {
+			top: 42vh;
+			background-color: #2196F3;
+			}
+			#rating {
+			top: 50vh;
+			background-color: #f44336;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div id="mySidenav" class="sidenav">
+				<ul>
+					<li id="info" onclick="info()">Info</li>
+					<li id="rating" onclick="rating()">Rating</li>
+					<!-- <li id="req" onclick="req()">S.Req.</li> -->
+				</ul>
+			</div>
+                                                                    <!-- Video -->
+			<div class="background-video">
+			<video src="..\videos\coh.mp4" autoplay muted loop class="one"></video>
+		</div>
+                                                                    <!-- Navbar -->
+		<div class="container">
+			<header id="navbar">
+				<a href="../Html/aaa.html" class="logo">AAA</a>
+				<ul>
+					<li><a href="../Html/home.html">Home</a></li>
+					<li><a href="../Html/aboutus.html">About'Us</a></li>
+					<li><a href="../Html/contactus.html">Contact'Us</a></li>
+					<li><a href="../Html/console.html">Previous</a></li>
+				</ul>
+				<span class="menuIcon" onclick="toggleMenu()"><i class="icon fas fa-ellipsis-h"></i></span>
+			</header>
+                                                                    <!-- Rating -->
+			<div class="rating active" style="color: white;">
+				<span class="heading"><h1>User Rating</h1></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star" aria-hidden="true"></span>
+				<p>4.3 average based on 631 reviews</p>
+				<div class="row">
+					<div class="middle">
+						<div class="bar-container">
+							<div class="bar-5"><span style="line-height: 0.5;">5⭐</span></div>
+						</div> <br>
+					</div>
+					<div class="middle">
+						<div class="bar-container">
+							<div class="bar-4"><span style="line-height: 0.5;">4⭐</span></div>
+						</div> <br>
+					</div>
+					<div class="middle">
+						<div class="bar-container">
+							<div class="bar-3"><span style="line-height: 0.5;">3⭐</span></div>
+						</div> <br>
+					</div>
+					<div class="middle">
+						<div class="bar-container">
+							<div class="bar-2"><span style="line-height: 0.5;">2⭐</span></div>
+						</div> <br>
+					</div>
+					<div class="middle">
+						<div class="bar-container">
+							<div class="bar-1"><span style="line-height: 0.5;">1⭐</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="textarea" >
+				<div class="text">
+					<div>
+						<h2>Cadence of Hyrule</h2>
+                        <p><b><i></i>Cadence of Hyrule</i></b> Crypt of the NecroDancer Featuring The Legend of Zelda is a rhythm game developed by Brace Yourself Games and published by Nintendo. The game is a crossover of Crypt of the NecroDancer with The Legend of Zelda, combining the rhythm-based movement and fighting mechanics with elements reminiscent of earlier games in the Zelda franchise. The game was released for the Nintendo Switch on June 13, 2019.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="req active" style="color: white;font-size: 20px">
+					<p>
+							<u><b>OS:</b></u> Windows XP, Vista, 7, or 10 <br>
+							<u><b>Processor:</b></u> 2GHz+ <br>
+							<u><b>Memory:</b></u> 3 GB RAM <br>
+							<u><b>Graphics:</b></u> 512MB <br>
+							<u><b>Storage:</b></u> 200 MB available space
+					</p>
+			</div> -->
+		</div>
+		</section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			function toggleMenu () {
+				var menuIcon=document.querySelector('.icon');
+				var navbar=document.querySelector('#navbar');
+				menuIcon.classList.toggle('active');
+				navbar.classList.toggle('active');
+			}
+			function info() {
+				const x=(!($(".textarea").hasClass("active")));
+				if(x){
+					return;
+				}else {
+					$( ".textarea" ).removeClass( "active" );
+					$( ".rating" ).addClass( "active" );
+					$( ".req" ).addClass( "active" );
+				}
+				};
+			function rating() {
+				const x=(!($(".rating").hasClass("active")));
+				if(x){
+					return;
+				}else {
+					
+					$( ".rating" ).removeClass( "active" );
+					$( ".textarea" ).addClass( "active" );
+					$( ".req" ).addClass( "active" );
+				}
+				};
+			// function req() {
+				// 	    const x=(!($(".req").hasClass("active")));
+				// 	    if(x){
+					// 	    	return;
+				// 	    }else {
+					
+					// 	    	$( ".req" ).removeClass( "active" );
+					// 	    	$( ".textarea" ).addClass( "active" );
+					// 	    	$( ".rating" ).addClass( "active" );
+				// 	    }
+				// 	  };
+		</script>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+  
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.main::before{
+    content: '';
+	position: absolute;
+    box-sizing: border-box;
+    top: 4.5vh;
+    left: 2.5vw;
+    width: 95%;
+    height: 91.5%;
+    /* z-index: 1000; */
+	backdrop-filter:blur(38px);
+    /* filter: blur(100px); */
+	box-shadow: 0 0 50px rgba(255, 255, 255, 0.288),inset 0 0 10px #000000;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+
+.main{
+	position: relative;
+	padding: 0 100px;
+	display:flex;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 100vh;
+    z-index: 10px;
+    min-width: 1000px;
+}
+
+.main .textarea{
+	position: relative;
+	max-width: 1000px;
+    
+}
+
+.main .textarea .text div h2{
+	color: #fff;
+	font-size: 6em;
+	line-height: 1em;
+	font-weight: 700;
+}
+
+.main .textarea .text div p{
+	color: rgb(216, 216, 216);
+	font-size: 20px;
+	margin: 20px 0;
+	margin-top: 38px;
+	font-family: 'Itim', cursive;
+}
+
+.background-video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.background-video video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+
+}
+
+.background-video video.one{
+	opacity: 1;
+
+}
+
+@media(max-width:1050px){
+	.main::before{
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.main{
+		padding: 0 2vw;
+	}
+}
+@media(max-height:600px){
+	.main::before{
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.main{
+		padding: 0 2vw;
+	}
+}

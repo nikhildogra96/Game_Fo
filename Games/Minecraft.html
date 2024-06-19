@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width",initial-scale=1.0>
+	<title>Minecraft</title>
+	<link rel="icon" href="../photos/logo9000.png" type="image/png">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<style type="text/css" media="screen">
+		u{
+			color: #8f8f8f;
+		}
+		.rating{
+			display: inline-block;
+			z-index: 100;
+			width:600px;
+		}
+		.heading {
+		  font-size: 25px;
+		  margin-right: 25px;
+		}
+
+		.fa {
+		  font-size: 25px;
+		}
+
+		.checked {
+		  color: orange;
+		}
+		.bar-5 {width: 80%; height: 18px; background-color: #4CAF50;padding-left:5px;color: black;}
+		.bar-4 {width: 12%; height: 18px; background-color: #2196F3;padding-left:5px;color: black;}
+		.bar-3 {width: 8%; height: 18px; background-color: #00bcd4;padding-left:5px;color: black;}
+		.bar-2 {width: 5%; height: 18px; background-color: #ff9800;padding-left:5px;color: black;}
+		.bar-1 {width: 10%; height: 18px; background-color: #f44336;padding-left:5px;color: black;}
+
+		.middle {
+		  margin-top:10px;
+		  float: left;
+		  width: 550px;
+		}
+
+		.bar-container {
+		  width: 100%;
+		  background-color:grey;
+		  text-align: center;
+		  color: white;
+		  border-radius: 0 10px 10px ;
+		  text-align: left;
+		  margin-bottom: -5px;
+		}
+		.row{
+			margin-left: 20px;
+		}
+		@media (max-width: 630px) {
+			.row{
+			margin-left: 0;
+			}
+			.middle{
+				width: 100%;
+			}
+		}
+	
+	</style>
+	<link rel="stylesheet" href="../CSS/game_section.css">
+
+</head>
+<body>
+	<section>
+		<div id="mySidenav" class="sidenav">
+		  <ul>
+		  	  <li id="info" onclick="info()">Info</li>
+		 	  <li id="rating" onclick="rating()">Rating</li>
+		  	  <li id="req" onclick="req()">S.Req.</li>
+		  </ul>
+		</div>
+		 															<!-- Video -->
+		<div class="background-video">
+			<video src="..\videos\mc.mp4" autoplay muted loop class="one"></video>
+		</div>
+		<div class="container">
+			<header id="navbar">
+																	<!-- Navbar -->
+				<a href="../Html/aaa.html" class="logo">AAA</a>
+				<ul>
+					<li><a href="../Html/home.html">Home</a></li>
+					<li><a href="../Html/aboutus.html">About'Us</a></li>
+					<li><a href="../Html/contactus.html">Contact'Us</a></li>
+					<li><a href="../Html/pc.html">Previous</a></li>
+				</ul>
+			<span class="menuIcon" onclick="toggleMenu()"><i class="icon fas fa-ellipsis-h"></i></span>
+			</header>
+																	<!-- Rating -->
+			<div class="rating active" style="color: white;">
+				<span class="heading"><h1>User Rating</h1></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star-half checked" aria-hidden="true"></span>
+				<p>4.5 average based on 579,422 reviews</p>
+				<div class="row">
+				  <div class="middle">
+				    <div class="bar-container">
+				      <div class="bar-5"><span style="line-height: 0.5;">5⭐</span></div>
+				    </div> <br>
+				  </div>
+				  <div class="middle">
+				    <div class="bar-container">
+				      <div class="bar-4"><span style="line-height: 0.5;">4⭐</span></div>
+				    </div> <br>
+				  </div>
+				  <div class="middle">
+				    <div class="bar-container">
+				      <div class="bar-3"><span style="line-height: 0.5;">3⭐</span></div>
+				    </div> <br>
+				  </div>
+				  <div class="middle">
+				    <div class="bar-container">
+				      <div class="bar-2"><span style="line-height: 0.5;">2⭐</span></div>
+				    </div> <br>
+				  </div>
+				  <div class="middle">
+				    <div class="bar-container">
+				      <div class="bar-1"><span style="line-height: 0.5;">1⭐</span></div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="textarea" >
+				<div class="text">
+					<div>
+						<h2>Minecraft</h2>
+                        <p><b><i>Minecraft</i></b> is a sandbox video game developed by Mojang. The game was created by Markus "Notch" Persson in the Java programming language. Following several early test versions, it was released as a paid public alpha for personal computers in 2009 before releasing in November 2011, with Jens Bergensten taking over development. Minecraft has since been ported to several other platforms and is the best-selling video game of all time, with 200 million copies sold and 126 million monthly active users as of 2020.
+                    </p>
+					</div>
+					
+				</div>
+			</div>
+																		<!-- Sys. Requirements -->
+			<div class="req active" style="color: white;font-size: 20px">
+				<p>
+					<u><b>OS:</b></u>Windows 7 or higher <br>
+					<u><b>Processor:</b></u> Intel Core i3-3210 3.2 GHz / AMD A8-7600 APU 3.1 GHz or equivalent <br>
+					<u><b>Memory:</b></u> 4 GB RAM <br>
+					<u><b>Graphics:</b></u>GeForce 700 Series or AMD Radeon Rx 200 Series (excluding integrated chipsets) with OpenGL 4.5 <br>
+					<u><b>Storage:</b></u>4 GB of free space
+				</p>
+			</div>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		function toggleMenu () {
+			var menuIcon=document.querySelector('.icon');
+			var navbar=document.querySelector('#navbar');
+			menuIcon.classList.toggle('active');
+			navbar.classList.toggle('active');
+		}
+		function info() {
+			    const x=(!($(".textarea").hasClass("active")));
+			    if(x){
+			    	return;
+			    }else {
+			    	$( ".textarea" ).removeClass( "active" );
+			    	$( ".rating" ).addClass( "active" );
+			    	$( ".req" ).addClass( "active" );
+			    }
+			  };
+		function rating() {
+			    const x=(!($(".rating").hasClass("active")));
+			    if(x){
+			    	return;
+			    }else {
+			    	
+			    	$( ".rating" ).removeClass( "active" );
+			    	$( ".textarea" ).addClass( "active" );
+			    	$( ".req" ).addClass( "active" );
+			    }
+			  };
+		function req() {
+			    const x=(!($(".req").hasClass("active")));
+			    if(x){
+			    	return;
+			    }else {
+			    	
+			    	$( ".req" ).removeClass( "active" );
+			    	$( ".textarea" ).addClass( "active" );
+			    	$( ".rating" ).addClass( "active" );
+			    }
+			  };
+	</script>
+</body>
+</html>

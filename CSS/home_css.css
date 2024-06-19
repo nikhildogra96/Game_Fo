@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+
+body{
+  background: linear-gradient(-45deg,#4a011a,#4a011a,#014141,#26063b);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar{
+  padding: 5px;
+
+
+}
+
+.logo{
+  margin-left:3.5vw;
+  width: 210px;
+  height: 40px;
+}
+
+.search{
+  float:right;
+  margin: auto;
+  vertical-align: center;
+}
+
+.main{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.container .box{
+  position: relative;
+  width: 320px;
+  height: 400px;
+  color: white;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px;
+  transition: 0.5s;
+}
+
+.container .box:hover{
+  transform:translateY(-25px)scale(1.02,1.06);
+}
+
+.container .box::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,#ff0058,#03a9f4); 
+}
+
+.container .box::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,#ff0058,#03a9f4); 
+  filter: blur(10px);
+}
+
+.container .box:nth-child(2)::before,
+.container .box:nth-child(2)::after{
+  background: linear-gradient(0deg,#03a9f4,#ff0058); 
+}
+
+.container .box:nth-child(3)::before,
+.container .box:nth-child(3)::after{
+  background: linear-gradient(315deg,#ff0058,#03a9f4); 
+}
+
+.container .box span{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom:6px;
+  background: rgba(6, 6, 6, 0.6);
+  z-index: 2;
+}
+
+.container .box .content{
+  position: relative;
+  z-index: 10;
+  padding: 20px 40px;
+}

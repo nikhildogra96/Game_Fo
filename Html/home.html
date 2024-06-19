@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game-fo</title>
+    <link rel="icon" href="../photos/logo9000.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/home_css.css">
+    <style>
+      .na:hover{
+        background:white;
+        border-radius: 20px;
+      }
+      .but:hover{
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../photos/logo200.png" alt="evevv" style="position:absolute;top: 0;left: 50%;margin-left: -150px;width: 290px;height: 55px;display: inline-block; margin-top: 15px;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="margin-top: 20px">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link na" href="aboutus.html" style="color: grey;font-size: 20px;font-weight:500;margin-left: 1vw">&nbsp;About'Us&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link na" href="contactus.html" style="color: grey;font-size: 20px;font-weight:500;margin-left: 1vw ">&nbsp;Contact'Us&nbsp;</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search" style="border-radius: 10px;background: none;border-color: black;color: white;">
+          <button class="btn btn-outline-success my-2 my-sm-0 but" type="submit" style="border:0;border-radius:10px;color: black"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="container">
+        <div class="box" onclick="mobile_launch()">
+          <span></span>
+          <div class="content">
+            <center>
+              <i class="fas fa-mobile-alt fa-5x"></i>
+            </center>
+          </div>
+        </div>
+        <div class="box" onclick="console_launch()">
+          <span></span>
+          <div class="content">
+            <center>
+              <i class="fas fa-gamepad fa-5x"></i>
+            </center>
+          </div>
+        </div>
+        <div class="box" onclick="pc_launch()">
+          <span></span>
+          <div class="content">
+            <center>
+              <i class="fas fa-desktop fa-5x"></i>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      function console_launch () {
+        window.open("console.html","_self");
+      }
+      function mobile_launch () {
+        window.open("mobile.html","_self");
+      }
+      function pc_launch () {
+        window.open("pc.html","_self");
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact'Us</title>
+        <link rel="stylesheet" href="../CSS/aboutus.css">
+        <link rel="icon" href="../photos/logo9000.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <style>
+            *{
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
+            .main .textarea{
+                position: relative;
+                max-width: 1500px;                
+            }
+            .main .textarea .text div h2{
+                color: #fff;
+                margin-top: 3vh;
+                font-size: 5.5em;
+                line-height: 1em;
+                font-weight: 700;
+            }
+            .formbox{
+                position: relative;
+                display: flex;
+                justify-content:space-between;
+                margin-top: 20px;
+                flex-wrap: wrap;
+                padding-top: 30px;
+            }
+            .formbox .inputBox{
+                position: relative;
+                margin-bottom:35px ;
+            }
+            .inputBox.w50{
+                width: 47%;
+            }
+            .inputBox.w100{
+                width: 100%;
+            }
+
+            .inputBox input,
+            .inputBox textarea{
+                width: 100%;
+                resize: none;
+                padding: 5px 0;
+                font-weight: 300;
+                color: rgb(255, 255, 255);
+                background-color:rgba(0, 0, 0, 0);
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #777;
+            }
+            .inputBox textarea{
+                height: 130px;
+            }
+            .inputBox span{
+                position: absolute;
+                left: 0;
+                padding: 5px 0;
+                pointer-events: none;
+                font-weight: 300;
+                transition: 0.3s;
+            }
+            .inputBox input[type="submit"]{
+                height: 35px;
+                position: relative;
+                cursor: pointer;
+                color: white;
+                border:none;
+                max-width: 150px;
+                border-radius: 5px;
+                background-color:rgba(255, 255, 255, 0.342);
+            }
+            .inputBox input[type="submit"]:hover{
+                font-weight: 590;
+                color: rgb(0, 0, 0);
+                background-color:rgb(255, 255, 255);
+            }
+
+            .inputBox input:focus~span,
+            .inputBox input:valid~span,
+            .inputBox textarea:focus~span,
+            .inputBox textarea:valid~span{
+                transform: translateY(-20px);
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background-video">
+            <video src="..\videos\rain2.mp4" autoplay muted loop class="one"></video>
+        </div>
+        <div class="main">
+            <div class="textarea" >
+				<div class="text">
+					<div>
+                        <h2>Contact'Us</h2>
+                        <form>
+                            <div class="formbox">
+                                <div class="inputBox w50">
+                                    <input type="text" required>
+                                    <span>First Name*</span>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="text" required>
+                                    <span>Last Name*</span>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="email" required>
+                                    <span>Email Address*</span>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="number" required>
+                                    <span>Mobile Number*</span>
+                                </div>
+                                <div class="inputBox w100">
+                                    <textarea required></textarea>
+                                    <span>Write your massage here...*</span>
+                                </div>
+                                <div class="inputBox w100">
+                                    <input type="submit" value="Send">
+                                </div>
+                            </div>
+                        </form>
+                       
+						
+					</div>
+					
+				</div>
+			</div>
+            
+        </div>
+    </body>
+</html>
